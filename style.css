@@ -1,0 +1,352 @@
+body {
+  background-color: #f2e9e9;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  background-color: #f2e9e9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 10%;
+}
+
+.pageBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 5%;
+}
+
+.pageBodyRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+.brand {
+  font-size: 2vw;
+  color: #33170d;
+}
+
+.section {
+  font-size: 1.3vw;
+  color: #33170d;
+}
+
+.section:hover {
+  transition-duration: 0.2s;
+  color: #febf10;
+}
+
+.selected {
+  border-bottom: solid #33170d 2px;
+}
+
+.selected:hover {
+  transition-duration: 0.2s;
+  border-bottom: solid #febf10 2px;
+}
+
+.cart {
+  width: 3vw;
+}
+
+.home {
+  background-image: url(imgs/sfondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 90%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+}
+
+.s1 {
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  opacity: 70%;
+}
+
+.s2 {
+  font-size: 5.4vw;
+  color: #ffffff;
+  margin: 3% 0;
+}
+
+.tableButton {
+  border-radius: 25px;
+  border: solid 3px white;
+  overflow: hidden;
+  perspective: 1px;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20%;
+  height: 90%;
+
+  padding: 1.5% 0;
+  cursor: pointer;
+}
+
+.tableButton:hover {
+  transition-duration: 0.2s;
+  background-color: white;
+}
+
+.tableButton:hover > a {
+  transition-duration: 0.2s;
+  color: black;
+}
+
+.tableButton > a {
+  font-size: 1.4vw;
+  color: white;
+}
+
+.corpoReservation {
+  background-color: #2f2a2a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90%;
+  width: 100%;
+}
+
+.reservation {
+  background-color: #f2e9e9;
+  border-radius: 30px;
+
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  overflow: auto; /* Enable scroll if needed */
+
+  width: 60%;
+  height: 60%;
+}
+
+.modalBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 70%;
+}
+
+.modalFooter {
+  width: 60%;
+  height: 30%;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.modalButtons > div {
+  border: solid 2px white;
+  border-radius: 20px;
+  padding: 1.5%;
+  font-size: 2.6vw;
+}
+
+.modalButtons > div:hover {
+  transition-duration: 0.2s;
+  background-color: gold;
+  color: black;
+
+  cursor: pointer;
+}
+
+.room {
+  background-image: url(imgs/parquet.jpg) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 10px solid white;
+
+  width: 90%;
+  height: 90%;
+}
+
+.halfRoom {
+  display: flex;
+}
+
+.d1 {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: 20%;
+  width: 60%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 30%;
+}
+
+.d2 {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 30%;
+  height: 100%;
+}
+
+.table {
+  border: 5px solid white;
+
+  height: 40%;
+  width: 20%;
+
+  margin: 5%;
+}
+
+.table:hover {
+  transition-duration: 0.2s;
+  background-color: #febf10;
+
+  cursor: pointer;
+}
+
+.d8 {
+  width: 40%;
+}
+
+.d16 {
+  height: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    background-image: url(imgs/sfondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90%;
+  }
+
+  .pageBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  .pageBodyRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+  }
+
+  .brand {
+    font-size: 5vw;
+    color: #33170d;
+  }
+
+  .section {
+    font-size: 3vw;
+    color: #33170d;
+  }
+
+  .cart {
+    width: 7vw;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+  }
+
+  .s1 {
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    opacity: 70%;
+  }
+
+  .s2 {
+    font-size: 10.5vw;
+    color: #ffffff;
+    margin: 6% 0;
+  }
+
+  .tableButton {
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+
+    padding: 1.5% 0;
+  }
+
+  .tableButton > a {
+    color: black;
+    font-size: 5vw;
+  }
+}
