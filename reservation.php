@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div id="notlogged" class="reservation">
+      <div id="notlogged" class="nl-reservation">
         <div class="nl-modalbody">
           <div>
             <label for="email">EMAIL</label>
