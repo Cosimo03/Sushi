@@ -46,17 +46,9 @@
         </div>
       </div>
 
-      <div id="notlogged" class="reservation">
+      <div id="notlogged" class="nl-reservation">
         <div class="nl-modalbody">
-          <div>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email-input" name="email" placeholder="email" value="<?php echo $email?>">  
-              
-          </div>
-          <div>
-              <label for="password">Password</label>
-              <input type="password" name="password" value="">
-          </div>
+          
 
           <div>
             
