@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include 'logout.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,6 +28,17 @@
         </div>
       </div>
     </header>
-    
+    <?php
+        if(!isset($_SESSION['email'])){
+            echo ('codice registrazione/login');
+        }
+        else{
+            $username = $_SESSION['username'];
+            echo  ("ciao '$username' ");
+            echo ('<form action="user.php" method="post">
+                   <button type="submit" name="logout"> logout </button>
+                   </form>');
+        }
+    ?>
 </body>
 </html>
