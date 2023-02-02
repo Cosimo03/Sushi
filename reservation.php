@@ -18,7 +18,10 @@
           <a class="section selected" href="reservation.php"> Reservation </a>
           <a class="section" href=""> Menù </a>
           <a class="section" href=""> Contact </a>
-          <a href="">
+          <a class="" href="user.php">
+            <img class="user" src="imgs/user.png" alt="">
+          </a>
+          <a href="cart.php">
             <img src="imgs/shopping-cart.png" class="cart" />
           </a>
         </div>

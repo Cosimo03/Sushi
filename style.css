@@ -58,6 +58,11 @@ a {
   border-bottom: solid #febf10 2px;
 }
 
+.user {
+  width: 2.5vw;
+  margin-bottom: 3px;
+}
+
 .cart {
   width: 3vw;
 }
@@ -305,6 +310,10 @@ a {
   .section {
     font-size: 3vw;
     color: #33170d;
+  }
+
+  .user {
+    width: 6vw;
   }
 
   .cart {
