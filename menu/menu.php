@@ -27,7 +27,24 @@
     </header>
 
     <div class="menubody">
-      <span>ciao</span>
+      <div class="scheda">
+        <div class="image"> 
+          <img src="../imgs/pngfind.com-ramen-noodles-png-3165225.png" alt="">
+        </div>
+        <div class="name">
+          <span>
+            ramen profumato
+          </span>
+        </div>
+        <div class="bot"> 
+          <span class="price">
+            price
+          </span>
+          <span class="buttons">
+            add
+          </span>
+        </div>
+      </div>
   </div>
 
   <script>
