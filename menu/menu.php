@@ -1,3 +1,6 @@
+<?php
+  include 'menu_conn.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +30,22 @@
     </header>
 
     <div class="menubody">
-      <div class="scheda">
+      <div class="sideList">
+        <div class="searchBar">
+          <input type="search" placeholder="Search here">
+          <span> Menu </span>
+        </div>
+        <div class="menuList" id="menuList">
+          
+
+        </div>
+      </div>
+      <div class="productList" id="productList">
+      <span>ciao</span>
+      </div>
+  </div>
+
+  <!-- <div class="scheda">
         <div class="image"> 
           <img src="../imgs/pngfind.com-ramen-noodles-png-3165225.png" alt="">
         </div>
@@ -44,11 +62,9 @@
             add
           </span>
         </div>
-      </div>
-  </div>
+      </div> -->
 
   <script>
-
     // let header = document.getElementById("header");
     // let lastScroll = 0;
 
@@ -68,6 +84,20 @@
 
     // })
   </script>
+  <?php
+    echo ('<script>
+    let menuList = document.getElementById("menuList");
+    let productList = document.getElementById("productList");
+    console.log('. $result . ');
+    for (e of '. $result .' ){
+      menuList.innerHTML += ` <a href="#${e.name}"> ${e.name}  </a> `;
+      productList.innerHTML +=  ` <div class = "category" id="${e.name}"> 
+      <div class = "categoryName"> <span> ${e.name} </span> </div>  
+      <div class = "categoryItems"> </div>                           
+      </div>`;
+    }
+  </script>');
+  ?>
     
 </body>
 </html>

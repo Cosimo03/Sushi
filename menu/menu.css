@@ -2,11 +2,75 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 
   width: 80%;
-  height: 120%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.sideList {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  background-color: #f2e9e9;
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  width: 20%;
+  height: 100vh;
+}
+
+.searchBar {
+  background-color: #f2e9e9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 15%;
+}
+
+.searchBar > input {
+  background-color: white;
+
+  border-radius: 20px;
+  width: 80%;
+  padding: 5px;
+
+  font-size: 3vh;
+}
+
+.searchBar > span {
+  margin-top: 5%;
+  font-size: 3vh;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 3vh;
+
+  margin-left: 15%;
+  width: 85%;
+  height: 75%;
+}
+
+.menuList > a {
+  margin-bottom: 10%;
+}
+
+.ProductList {
+  background-color: #f2e9e9;
+
+  margin-left: 25%;
+  width: 80%;
 }
 
 .scheda {
@@ -17,6 +81,7 @@
   justify-content: center;
   align-items: center;
 
+  border-radius: 20px;
   width: 20%;
   height: 35%;
 }
@@ -51,4 +116,10 @@
   margin-right: 20%;
   width: 60%;
   height: 15%;
+}
+
+.category {
+  display: flex;
+
+  margin-bottom: 20%;
 }
