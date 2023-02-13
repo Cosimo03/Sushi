@@ -38,7 +38,7 @@
             $username =  $_SESSION['username']; 
 
             echo "ciao '$username'";
-            header('location: ../reservation.php');
+            header('location: ../reservation/reservation.php');
         }
         else{
             array_push($errors, 'Email and/or Password are wrong, try again');

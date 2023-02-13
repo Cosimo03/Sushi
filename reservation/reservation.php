@@ -103,6 +103,15 @@
         });
         </script>';
       }
+      else {
+          echo '<script>
+          for (table of tables) {
+          table.addEventListener("click", (table) => {
+            table.href = "http://example.com/";
+          });
+          }
+      }';
+    }
     ?>
           
         

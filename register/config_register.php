@@ -55,7 +55,7 @@
             $_SESSION['username'] = $username;
             $_SESSION['email'] = $email;
             $_SESSION['success'] = "You're now logged in";
-            header('location: ../reservation.php');
+            header('location: ../reservation/reservation.php');
         }
     }
 

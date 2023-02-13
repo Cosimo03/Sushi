@@ -33,12 +33,18 @@
         <span class="s2">
           Serving delicious sushi directly from Taranto's sea</span
         >
-        <div class="tableButton">
-          <a href="reservation.html">Find a Table</a>
+        <div class="tableButton" id="tableButton">
+          <a>Find a Table</a>
         </div>
       </div>
     </div>
 
     <footer></footer>
+    <script>
+      let tableButton = document.getElementById("tableButton");
+      tableButton.addEventListener('click', ()=>{
+        window.location.href = '../reservation/reservation.php';
+      })
+    </script>
   </body>
 </html>

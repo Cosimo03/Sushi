@@ -41,8 +41,56 @@
         </div>
       </div>
       <div class="productList" id="productList">
-      <span>ciao</span>
+        <div class="productBody"> 
+          <div class="productImageInfo">
+            <img src="../imgs/istockphoto-621899966-612x612.jpg" alt="">
+            <div class="productInfo">
+              <div class="productName"> Sashimi di salmone </div>
+            <div class="productPrice">
+              <div class="productPriceEur"> 3 </div>
+              <div class="productPriceCent"> .99$ </div>
+            </div>
+          </div>
+          </div> 
+
+          <div class="productBuy"> 
+            <div class="productAdd">
+              <span>+</span>
+            </div>
+            <div class="productNumber">
+              0
+            </div>
+            <div class="productRemove">
+              -
+            </div>
+          </div>
+        </div>
+        <div class="productBody"> 
+          <div class="productImageInfo">
+            <img src="../imgs/istockphoto-621899966-612x612.jpg" alt="">
+            <div class="productInfo">
+              <div class="productName"> Sashimi di salmone </div>
+            <div class="productPrice">
+              <div class="productPriceEur"> 3 </div>
+              <div class="productPriceCent"> .99€ </div>
+            </div>
+          </div>
+          </div> 
+
+          <div class="productBuy"> 
+            <div class="productAdd" id="40">
+              <span>+</span>
+            </div>
+            <div class="productNumber" id="40">
+              0
+            </div>
+            <div class="productRemove">
+              -
+            </div>
+          </div>
+        </div>
       </div>
+      
   </div>
 
   <!-- <div class="scheda">
@@ -98,6 +146,11 @@
     }
   </script>');
   ?>
+
+  <script>
+    let arrAdd = document.getElementsByClassName("productAdd");
+
+  </script>
     
 </body>
 </html>
